@@ -2,10 +2,10 @@ import { useState } from "react";
 
 function Counter(){
 
-    let [quantity, setQuantity] = useState(0);
+    const [quantity, setQuantity] = useState(0);
 
     function increment(){
-        setQuantity(quantity += 1);
+        setQuantity(quantity + 1);
         console.log(quantity);
     }
 
