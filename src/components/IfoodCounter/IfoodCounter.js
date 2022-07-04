@@ -1,12 +1,14 @@
-import React from 'react'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import './IfoodCounter.css'
 
 export default function IfoodCounter() {
 
     const [value, setValue]  = useState(1);
-    
     const [buttonClass, setButtonClass] = useState('button-active');
+
+    useEffect(()=>{
+        alert('Carrinho vazio!')        
+    },[buttonClass])
 
     function up(){
         setValue(value+1);
@@ -18,7 +20,7 @@ export default function IfoodCounter() {
             setValue(value-1);
         }
 
-        if(value <= 1){
+        if(value < 1){
             setButtonClass('button-inactive');
         } 
     }
