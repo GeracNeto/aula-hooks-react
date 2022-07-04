@@ -1,8 +1,18 @@
+import { useState } from "react";
+
 function Counter(){
+
+    let [quantity, setQuantity] = useState(0);
+
+    function increment(){
+        setQuantity(quantity += 1);
+        console.log(quantity);
+    }
+
     return(
         <div>
-            <h1>1</h1>
-            <button>+</button>
+            <h1>{quantity}</h1>
+            <button onClick={increment}>+</button>
         </div>
     )
 }
