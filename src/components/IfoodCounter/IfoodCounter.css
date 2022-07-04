@@ -8,17 +8,16 @@
 
 .master-container p{
     margin: 0;
-    padding: 40px;
+    padding: 50px;
     font-size: 48px;
 }
 
 .button-active{
     width: 200px;
     height: 100px;
-    font-size: 20px;
-    font-weight: bolder;
+    font-size: 72px;
 
-    background-color: #f8f1e9;
+    background-color: #5f9982;
     border: none;
     color: #ff1f4c;
 }
@@ -26,10 +25,14 @@
 .button-inactive{
     width: 200px;
     height: 100px;
-    font-size: 20px;
+    font-size: 72px;
     font-weight: bolder;
 
-    background-color: #f8f1e9;
+    background-color: #5f9982;
     border: none;
     color: #000000;
+}
+
+button:hover{
+    background-color: #ffc803;
 }
